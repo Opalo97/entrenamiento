@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Escribe un número: ");
         numero = entrada.nextInt();
 
-        for ( numero; numero > 1; numero++){
+        for (int numero = 0; numero > 1; numero++){
             System.out.println(numero);
         }
     }
