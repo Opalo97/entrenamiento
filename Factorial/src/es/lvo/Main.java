@@ -5,14 +5,16 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int numero;
+        int factorial = 1, numero;
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Escribe un número: ");
+        System.out.println("Dame un numero: ");
         numero = entrada.nextInt();
 
-        for (int numero = 0; numero > 1; numero++){
-            System.out.println(numero);
+        for (int i = 1; i <= numero; i++) {
+            factorial *= i;
         }
+
+        System.out.println("Factorial = " + factorial);
     }
 }
