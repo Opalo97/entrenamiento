@@ -8,7 +8,7 @@ public class Main {
         int numero;
         Scanner entrada = new Scanner(System.in);
 
-      for (int i = 0; i < 5; i++) {
+      for (int i = 0; i < 10; i++) {
           System.out.println("NÚMERO " + (i + 1) + " :");
           System.out.println("=========================================================");
           do {
