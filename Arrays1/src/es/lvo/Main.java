@@ -10,19 +10,17 @@ public class Main {
 
         System.out.println("Dame 10 numeros: ");
         for (int i = 0; i < numeros.length; i++) {
-            System.out.print("Númeroo " + (i + 1) + ": ");
+            System.out.print("Número " + (i + 1) + ": ");
             numeros[i] = entrada.nextInt();
         }
         for (int i = 0; i < numeros.length; i++){
-            if (i < (numeros.length - 1)) {
+            if (i < numeros.length - 2) {
                 System.out.print(numeros[i] + ", ");
-            } else if (i < (numeros.length)){
+            } else if (i < numeros.length - 1){
                 System.out.print(numeros[i] + " y ");
             } else {
-                System.out.print("y " + numeros[i]);
+                System.out.print(numeros[i]);
             }
-
-
         }
     }
 }
