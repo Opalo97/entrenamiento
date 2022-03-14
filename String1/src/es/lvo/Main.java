@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    int revision = 0;
     Scanner entrada = new Scanner(System.in);
 
     System.out.print("Escribe un texto: ");
@@ -14,14 +13,13 @@ public class Main {
     char letra = entrada.nextLine().charAt(0);
 
     for (int i = 0; i < texto.length(); i++) {
-        if (letra == texto.charAt(i)) {
-            revision ++;
+        if (letra == texto.toLowerCase().charAt(i) || letra == texto.toUpperCase().charAt(i)) {
+            System.out.print(texto.charAt(i) + " ");
+        } else if (texto.charAt(i) == ' ') {
+            System.out.print("  ");
+        } else {
+            System.out.print("_ ");
         }
-    }
-    if (revision != 0) {
-        System.out.println("La letra " + letra + " está en el texto " + texto + ", " + revision + " veces" );
-    } else {
-        System.out.println("La letra " + letra + " no está en el texto " + texto);
     }
 
     entrada.close();
